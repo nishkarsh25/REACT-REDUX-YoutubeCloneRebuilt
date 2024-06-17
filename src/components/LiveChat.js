@@ -5,5 +5,12 @@ import {useDispatch} from "react-redux";
 import { setMessage } from '../utils/chatSlice';
 import { generateRandomName, generateRandomMessage } from '../utils/helper';
 
+const LiveChat = () => {
 
+    const message = useSelector((store) => store.chat.message);
+    const dispatch = useDispatch();
+    
+
+    
+}
 
