@@ -106,5 +106,11 @@ const sidebarItem = [
 const Sidebar = () => { 
     const open = useSelector((store)=>store.app.open);
      
-   
+    return (
+        <div className={`relative left-0 ${open? "w-[20%]" : "w-[6%]"} p-5 h-[calc(100vh-4.625rem)] bg-white overflow-y-scroll overflow-x-hidden`}>
+            {
+                
+            }
+        </div>
+    )
 }
