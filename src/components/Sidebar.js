@@ -103,4 +103,8 @@ const sidebarItem = [
     },
 ]
 
-
+const Sidebar = () => { 
+    const open = useSelector((store)=>store.app.open);
+     
+   
+}
