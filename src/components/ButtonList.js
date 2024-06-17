@@ -16,6 +16,13 @@ const ButtonList = () => {
   }
   console.log(active);
 
-  
+  return (
+    <div className='flex w-full overflow-x-scroll no-scrollbar my-1'>
+      {
+        
+      }
+
+    </div>
+  )
 }
 
