@@ -28,7 +28,10 @@ const Watch = () => {
         }
     }
 
-    
+    const sendMessage = () => {
+        dispatch(setMessage({name:"Patel", message:input}));
+        setInput("");
+    }
 
     
 
