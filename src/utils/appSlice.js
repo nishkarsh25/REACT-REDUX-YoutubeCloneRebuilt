@@ -25,5 +25,5 @@ const appSlice = createSlice({
          
     } 
 });
-
-
+export const {toggleSidebar,setHomeVideo,setCategory,setSearchSuggestion} = appSlice.actions;
+export default appSlice.reducer;
