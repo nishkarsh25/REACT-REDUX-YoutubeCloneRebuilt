@@ -41,7 +41,15 @@ const VideoContainer = () => {
     return (
         <div className='grid grid-cols-3 gap-3'>
             {
-                
+                video.map((item) => {
+                    console.log(item);
+                    return (
+                        <Link to={`/watch?v=${typeof item.id === 'object' ? item.id.videoId : item.id }`} key={typeof item.id === 'object' ? item.id.videoId : video.id } >
+                            <VideoCart item={item} />
+                        </Link>
+
+                    )
+                })
             }
 
         </div>
