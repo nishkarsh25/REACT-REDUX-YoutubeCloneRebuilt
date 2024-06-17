@@ -15,7 +15,9 @@ import {setMessage} from "../utils/chatSlice";
 const Watch = () => {
     const [input, setInput] = useState("");
     const [singleVideo, setSingleVideo] = useState(null);
-    
+    const [searchParams] = useSearchParams();
+    const videoId = searchParams.get('v');
+    const dispatch = useDispatch();
 
     
 
