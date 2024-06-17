@@ -20,6 +20,15 @@ const LiveChat = () => {
         
     },[])
 
-    
+    return (
+        <div className='px-4 py-1'>
+            <div>
+                {
+                    
+                }
+
+            </div>
+        </div>
+    )
 }
 
