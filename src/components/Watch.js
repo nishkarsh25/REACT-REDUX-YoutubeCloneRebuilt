@@ -12,5 +12,19 @@ import LiveChat from './LiveChat';
 import {useDispatch} from "react-redux";
 import {setMessage} from "../utils/chatSlice";
 
+const Watch = () => {
+    const [input, setInput] = useState("");
+    const [singleVideo, setSingleVideo] = useState(null);
+    
 
+    
+
+    
+
+    
+
+
+
+    
+}
 
