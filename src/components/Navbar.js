@@ -16,13 +16,27 @@ const Navbar = () => {
     const dispatch = useDispatch();
     const { searchSuggestion } = useSelector((store) => store.app);
 
-    
+    const searchVideo = () => {
+        dispatch(setCategory(input));
+        setInput("");
+    }
 
-    
+    const toggleHandler = () => {
+        dispatch(toggleSidebar());
+    }
 
-    
+    const showSuggestion = async () => {
+        try {
+            const res = await axios.get(SEARCH_SUGGESTIONS_API + input);
+            dispatch(setSearchSuggestion(res?.data[1]))
+        } catch (error) {
+            console.log(error);
+        }
+    }
 
-    
+    const openSuggestion = () => {
+        setSuggestion(true);
+    }
 
     
 
