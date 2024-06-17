@@ -8,7 +8,22 @@ const appSlice = createSlice({
         category:"All",
         searchSuggestion:[],
     },
-    
+    reducers:{
+        // action
+        toggleSidebar:(state)=>{
+            state.open = !state.open;
+        },
+        setHomeVideo:(state,action)=>{
+            state.video = action.payload;
+        },
+        setCategory:(state,action)=>{
+            state.category = action.payload;
+        },
+        setSearchSuggestion:(state,action)=>{
+            state.searchSuggestion = action.payload;
+        }
+         
+    } 
 });
 
 
