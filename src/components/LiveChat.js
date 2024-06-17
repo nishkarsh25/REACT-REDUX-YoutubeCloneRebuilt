@@ -9,7 +9,16 @@ const LiveChat = () => {
 
     const message = useSelector((store) => store.chat.message);
     const dispatch = useDispatch();
-    
+    useEffect(()=>{
+       const timer = setInterval(()=>{
+            dispatch(setMessage({name:generateRandomName(), message:generateRandomMessage(16)}));
+        },1000)
+
+        return(()=>{
+            clearInterval(timer)
+        })
+        
+    },[])
 
     
 }
