@@ -38,7 +38,16 @@ const Navbar = () => {
         setSuggestion(true);
     }
 
-    
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            showSuggestion();
+        }, 200)
+
+        return () => {
+            clearTimeout(timer);
+        }
+
+    }, [input])
 
     
 }
