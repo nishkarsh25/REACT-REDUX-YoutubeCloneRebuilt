@@ -16,3 +16,4 @@ const ChatMessage = ({item}) => {
   )
 }
 
+export default ChatMessage
