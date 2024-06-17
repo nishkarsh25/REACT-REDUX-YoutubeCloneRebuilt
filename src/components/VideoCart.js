@@ -15,7 +15,9 @@ const VideoCart = ({item}) => {
         }
     }
 
-    
+    useEffect(()=>{
+        getYoutubeChannelName();
+    },[])
 
     
 }
