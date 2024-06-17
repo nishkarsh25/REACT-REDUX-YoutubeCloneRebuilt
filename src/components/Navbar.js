@@ -10,5 +10,22 @@ import { useState } from "react";
 import { SEARCH_SUGGESTIONS_API } from "../constant/youtube";
 import axios from "axios";
 
+const Navbar = () => {
+    const [input, setInput] = useState("");
+    const [suggestion, setSuggestion] = useState(false);
+    const dispatch = useDispatch();
+    const { searchSuggestion } = useSelector((store) => store.app);
 
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+}
 
