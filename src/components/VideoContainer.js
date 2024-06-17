@@ -30,7 +30,13 @@ const VideoContainer = () => {
             console.log(error);
         }
     }
-    
+    useEffect(() => {
+        if (category === "All") {
+            fetchingYoutubeVideo();
+        } else {
+            fetchVideoByCategory(category);
+        }
+    }, [category]);
 
     
 }
