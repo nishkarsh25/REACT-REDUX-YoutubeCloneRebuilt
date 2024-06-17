@@ -35,3 +35,4 @@ const VideoCart = ({item}) => {
     )
 }
 
+export default VideoCart
