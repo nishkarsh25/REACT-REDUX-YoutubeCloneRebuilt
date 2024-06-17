@@ -33,7 +33,9 @@ const Watch = () => {
         setInput("");
     }
 
-    
+    useEffect(() => {
+        getSingleVideo();
+    }, []);
 
 
 
