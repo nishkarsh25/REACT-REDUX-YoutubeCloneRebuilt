@@ -24,7 +24,11 @@ const LiveChat = () => {
         <div className='px-4 py-1'>
             <div>
                 {
-                    
+                    message.map((item,idx) => {
+                        return (
+                            <ChatMessage key={idx} item={item}/>
+                        )
+                    })
                 }
 
             </div>
