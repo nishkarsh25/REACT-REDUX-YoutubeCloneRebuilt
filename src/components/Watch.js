@@ -19,7 +19,14 @@ const Watch = () => {
     const videoId = searchParams.get('v');
     const dispatch = useDispatch();
 
-    
+    const getSingleVideo = async () => {
+        try {
+            const res = await axios.get(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=${videoId}&key=${API_KEY}`);
+            setSingleVideo(res?.data?.items[0]);
+        } catch (error) {
+            console.log(error);
+        }
+    }
 
     
 
