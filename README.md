@@ -14,7 +14,7 @@ A YouTube clone built with React, Redux, and TailwindCSS, allowing users to brow
 
 ## Live Demo
 
-You can try out the live demo of the app [here](https://glittery-nougat-31ee8a.netlify.app/).
+You can try out the live demo of the app [here](https://react-redux-youtubeclonerebuilt.onrender.com).
 
 ## Folder Structure
 
