@@ -8,7 +8,13 @@ const ButtonList = () => {
   const [active, setActive] = useState("All");
   const dispatch = useDispatch();
 
-  
+  const videoByTag = (tag) => {
+    if (active !== tag) {
+      dispatch(setCategory(tag));
+      setActive(tag);
+    }
+  }
+  console.log(active);
 
   
 }
