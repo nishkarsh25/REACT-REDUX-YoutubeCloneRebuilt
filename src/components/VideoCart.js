@@ -5,7 +5,7 @@ import API_KEY from '../constant/youtube';
 
 
 const VideoCart = ({item}) => {
-    
+    const [ytIcon, setYtIcon] = useState("");
     
 
     
