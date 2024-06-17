@@ -39,7 +39,7 @@ youtube-clone/
 ## GIF's
 
 <!-- Include screenshots or GIFs of your app here to give users a visual representation of what your app looks like. -->
-<img src="https://github.com/nishkarsh25/React-Redux-YoutubeCloneRebuilt/blob/main/Screenshots/ss1.gif" alt="Screenshot 1" width="1000"> 
+<img src="https://github.com/nishkarsh25/REACT-REDUX-YoutubeCloneRebuilt/blob/main/Screenshots/ss1.gif" alt="Screenshot 1" width="1000"> 
 
 
 
