@@ -21,10 +21,20 @@ var nameList = [
     'Slash', 'Melt', 'Melted', 'Melting', 'Fell', 'Wolf', 'Hound',
     'Legacy', 'Sharp', 'Dead', 'Mew', 'Chuckle', 'Bubba', 'Bubble', 'Sandwich', 'Smasher', 'Extreme', 'Multi', 'Universe', 'Ultimate', 'Death', 'Ready', 'Monkey', 'Elevator', 'Wrench', 'Grease', 'Head', 'Theme', 'Grand', 'Cool', 'Kid', 'Boy', 'Girl', 'Vortex', 'Paradox'
 ];
-
 export const generateRandomName = () => {
     return nameList[Math.floor(Math.random() * nameList.length)];
 };
 
-
+export const generateRandomMessage = (length) => {
+    const charset = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let randomText = '';
+  
+    for (let i = 0; i < length; i++) {
+      const randomIndex = Math.floor(Math.random() * charset.length);
+      randomText += charset[randomIndex];
+    }
+  
+    return randomText;
+  }
+  
    
